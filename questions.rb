@@ -5,6 +5,3 @@ class Questions
     puts "What does #{random_number1} + #{random_number2} equal?"
   end
 end
-
-question1 = Questions.new
-puts question1.new_question
