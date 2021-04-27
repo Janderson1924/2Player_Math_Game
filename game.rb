@@ -31,13 +31,13 @@ class Game
       puts "Player 1: #{player1.life}/3 vs Player 2: #{player2.life}/3 "
       puts "\n"
       puts "----- NEXT TURN -----"
-      current_q = questions.new_question
+      next_question = questions.new_question
     
-      puts "Player #{self.current_player.id}'s Turn: What is #{current_q}?"
+      puts "Player #{self.current_player.id}'s Turn: What is #{next_question}?"
       print "Answer: "
       answer = $stdin.gets.chomp
     
-      if questions.wrong_answer?(current_q, answer.to_i)
+      if questions.wrong_answer?(next_question, answer.to_i)
         puts "Correct!"
       else
         puts "Incorrect."

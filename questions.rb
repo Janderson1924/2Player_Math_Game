@@ -4,8 +4,8 @@ class Questions
   "#{rand(1..20)} + #{rand(1..20)}"
   end
 
-  def wrong_answer? (guess, answer)
-    eval(guess) == answer ? true : false
+  def wrong_answer? (question, answer)
+    eval(question) == answer ? true : false
   end 
 end
 
