@@ -1,7 +1,13 @@
 class Questions
+
   def new_question
-    random_number1 = rand(1..20)
-    random_number2 = rand(1..20)
-    puts "What does #{random_number1} + #{random_number2} equal?"
+  "#{rand(1..20)} + #{rand(1..20)}"
   end
+
+  def wrong_answer? (guess, answer)
+    eval(guess) == answer ? true : false
+  end 
 end
+
+
+
