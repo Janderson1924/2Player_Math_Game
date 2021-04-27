@@ -4,7 +4,6 @@ class Game
   def initialize
     @game_over = false
     @current_player = nil
-    @current_question = nil
   end 
 
   def set_current_player(p1, p2)
