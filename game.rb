@@ -7,10 +7,6 @@ class Game
     @current_question = nil
   end 
 
-  def get_question(dynamicQuestions)
-    @current_question = dynamicQuestions
-  end
-
   def set_current_player(p1, p2)
     @current_player == p1 ? @current_player = p2 : @current_player = p1
   end
